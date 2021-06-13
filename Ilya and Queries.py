@@ -1,0 +1,16 @@
+arr=input()
+new=[]
+test=int(input())
+i=1
+found=0
+while(i<len(arr)):
+    if(arr[i]==arr[i-1]):
+        found+=1
+    new.append(int(found))
+    i+=1
+print(new)
+while(test):
+    a,b=map(int,input().split())
+    #print([b-1],[a-1])
+    print(new[b-1]new[a-1])
+    test-=1

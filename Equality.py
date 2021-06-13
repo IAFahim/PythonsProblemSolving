@@ -1,0 +1,13 @@
+size,frq=map(int,input().split())
+arr=input()
+count,i,low=0,0,10000000000
+brr="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+while(i<frq):
+    count=arr.count(brr[i])
+    if(count==0):
+        print(0)
+        exit()
+    if(count<low):
+        low=count
+    i=i+1
+print(frq*low)
